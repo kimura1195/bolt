@@ -1,7 +1,19 @@
 /* ここから */
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  }
+
+ @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+ @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+  
+
 .body {
  color: #333;
+ font-family:"Lato";
+ font-family:"Raleway" ;
 }
 
 .inner {
@@ -13,6 +25,38 @@
 
 .p {
   font-size: 20px;
+}
+
+.button{
+  color: #f2f2f2;
+  transition:auto 0.3s;
+  text-decoration: none
+}
+
+.button:hover{
+  color: #333;
+}
+
+.header {
+  width: 100%;
+}
+
+.header-inner{
+ padding: 15px 0;
+}
+
+.header_icon{
+  float: left;
+  font-size: 30px;
+  
+}
+
+
+.header_button {
+  float:right;
+  padding: 14px 12px;
+  font-size: 12px;
+  background-color: #74cfae;
 }
 
 /* 上手くいったところ */
@@ -51,7 +95,6 @@
   width: 100%;
   background-color: #74cfae;
   overflow: auto;
-  
 }
 
 .inner_section_green{
@@ -86,41 +129,56 @@
 }
 
 .article_title  {
-  
+  font-size: 24px;
 }
 
 /* 画像　折り返し */
-.img_article_container {
-  float: left;
-}
 
 .items_article {
   margin-left: 100px;
   margin-bottom: 80px;
   float: left;
+  transition: auto 0.3s;
+  opacity: 0.7 ;
 }
 
-.items:first-child {
+.items_article:hover{
+  opacity: 1 ;
+}
+
+
+.items_article:first-child{
   margin-left: 0;
 } 
 
-.items_article :nth-child (n+4) {
-  float: left;
+/* まとめられないのか？ */
+.items_article:nth-child(4) {
+  margin-left: 0;
 }
 
-/* 折り返し先のmarginはどうすれば？ */
+.items_article :nth-child(n+4) {
+  float: left;
+}
 
 
 .article_text {
   margin-top: 90px;
   padding-bottom: 70px;
+  float: left;
 }
 
-/* gray */
-
-.section_gray_box {
-
+.article_button{
+  float: left;
+  margin-top: 90px;
+  margin-left: 90px;
+  font-size: 12px;
+  padding: 14px 20px;
+  background-color: #74cfae;
 }
+
+/* .article_button:hover{
+  color: #333;
+} */
 
 .section_gray {
   width: 100%;
@@ -138,10 +196,6 @@
   text-align: center;
 }
 
-.section_gray_contensbox {
-  
-}
-
 .section_gray_items {
   float: left;
   margin-left: 180px;
@@ -151,7 +205,6 @@
 .section_gray_items:first-child {
   margin-left: 0;
 }
-
 
 .section_subtitle {
   font-size: 16px;
@@ -163,8 +216,23 @@
 }
 
 .inner_nav{
-  padding-top: 200px;
-  padding-bottom: 250px;
+  padding: 200px 0;
+  
+}
+
+.icon_size {
+  width: 185px;
+  padding: 30px 0;
+  color: #74cfae;
+  font-size: 50px;
+  background-color:#f2f2f2;
+  transition: all 0.3s;
+  cursor: auto;
+}
+
+.icon_size:hover{
+  background-color: white;
+  cursor:pointer;
 }
 
 .footer {
