@@ -6,14 +6,17 @@
   clear: both;
   }
 
- @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
- @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
-  
-
 .body {
  color: #333;
  font-family:"Lato";
- font-family:"Raleway" ;
+}
+
+.is-raleway{
+  font-family:"Raleway" ;
+}
+
+.p {
+  font-size: 20px;
 }
 
 .inner {
@@ -23,12 +26,8 @@
   text-align: center;
 }
 
-.p {
-  font-size: 20px;
-}
-
 .button{
-  color: #f2f2f2;
+  color:  white;
   transition:auto 0.3s;
   text-decoration: none
 }
@@ -114,6 +113,7 @@
 .section_green_text {
   font-size: 20px;
   color: #f2f2f2;
+  line-height: 1.5;
 }
 
 /* ↓float:left;でどうにかしたいけどできてないとこ */
@@ -130,6 +130,7 @@
 
 .article_title  {
   font-size: 24px;
+  padding-bottom: 40px;
 }
 
 /* 画像　折り返し */
@@ -144,6 +145,7 @@
 
 .items_article:hover{
   opacity: 1 ;
+  cursor:pointer;
 }
 
 
@@ -176,9 +178,6 @@
   background-color: #74cfae;
 }
 
-/* .article_button:hover{
-  color: #333;
-} */
 
 .section_gray {
   width: 100%;
@@ -194,6 +193,10 @@
   font-size: 24px;
   color: #f2f2f2;
   text-align: center;
+}
+
+.section_gray_contensbox{
+  display: inline-block;
 }
 
 .section_gray_items {
@@ -221,16 +224,19 @@
 }
 
 .icon_size {
-  width: 185px;
-  padding: 30px 0;
   color: #74cfae;
   font-size: 50px;
-  background-color:#f2f2f2;
-  transition: all 0.3s;
-  cursor: auto;
 }
 
-.icon_size:hover{
+.icon {
+  display: inline-block;
+  width: 185px;
+  padding: 30px 0;
+  background-color:#f2f2f2;
+  transition: all 0.3s;
+}
+
+.icon:hover{
   background-color: white;
   cursor:pointer;
 }
@@ -241,11 +247,12 @@
 
 .inner_footer{
   padding-top: 20px;
-  padding-bottom: 25px;
+  
 }
 
 .footer_text {
   float: right;  
+  padding-bottom: 25px;
 }
 
 
